@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proto</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/CSS" href="Styles/normalize.css">
+	<link rel="stylesheet" type="text/CSS" href="Styles/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+	</header>
+	<main>
+	<div id="mainContainer" class="row">
+		
+		<section id="playerPanel">
+			<div id="playerPanelTitle">
+				<h1>Character</h1>
+			</div>
+			<div id="playerInfo">
+				<div class="playerStat">
+					<p id="preCharName">Name: </p>
+					<p class="playerStatVal" id="charName">MechaDave</p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharAP">AP: </p>
+					<p class="playerStatVal" id="charAP"></p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharHP">HP: </p>
+					<p class="playerStatVal" id="charHP"></p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharATK">ATK: </p>
+					<p class="playerStatVal" id="charATK"></p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharARM">ARM: </p>
+					<p class="playerStatVal" id="charARM"></p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharSHD">SHD: </p>
+					<p class="playerStatVal" id="charSHD"></p>
+				</div>
+				<div class="playerStat">
+					<p id="preCharMOV">MOV: </p>
+					<p class="playerStatVal" id="charMOV"></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="logScreen">
+			<div id="logText">
+			</div>
+		</section>
+
+		<section id="targetPanel">
+			<h1>Target</h1>
+			<div class="targetStat">
+				<p>Number of Targets:</p>
+				<p class="targetStatVal" id="targetNum"></p>
+			</div>
+			<div class="targetStat">
+				<p>Name:</p>
+				<p class="targetStatVal" id="targetName"></p>
+			</div>
+			<div class="targetStat">
+				<p>Class:</p>
+				<p class="targetStatVal" id="targetClass"></p>
+			</div>
+			<div class="targetStat">
+				<p>HP:</p>
+				<p class="targetStatVal" id="targetHP"></p>
+			</div>
+			<div class="targetStat">
+				<p>SHD:</p>
+				<p class="targetStatVal" id="targetSHD"></p>
+			</div>
+			<div class="targetStat">
+				<p>Distance:</p>
+				<p class="targetStatVal" id="targetDist">50m</p>
+			</div>
+		</section>
+
+		<section id="controls">
+			<h1>Controls</h1>
+			<div id="controlDiv">
+				<button type="button" id="cycleTarget">Cycle Target</button>
+				<button type="button" id="atkRange">Attack Ranged</button>
+				<button type="button" id="atkMelee" disabled>Attack Melee</button>
+				<button type="button" id="moveTo" disabled>Move To</button>
+				<button type="button" id="moveAway" disabled>Move Away</button>
+				<br><button type="button" id="endTurn">End Turn</button>
+			</div>
+		</section>
+
+		
+		
+	</div>
+
+	<section id="playerSetup">
+		<div id="playerSetupDiv">
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<button type="button" id="nameSub">Change Name</button>
+			</form>
+		</div>
+	</section>
+	</main>
+
+
+	<script src="Scripts/myScript.js" type="text/javascript"></script>
+</body>
+<footer>
+</footer>
+</html>
